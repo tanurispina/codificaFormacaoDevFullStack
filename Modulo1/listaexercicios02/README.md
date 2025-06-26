@@ -1,10 +1,11 @@
-# 📘 Lista de Exercícios 01 – Dev Full Stack Jr (Codifica & +prati)
+# 📘 Lista de Exercícios 02 – Dev Full Stack Jr (Codifica & +prati)
+> Lista ainda nao finalizada
 
-Bem-vindo à  lista de desafios  da nossa formação! Aqui você encontrará exercícios práticos desenvolvidos em JavaScript para reforçar seus aprendizados.
+Bem-vindo à segunda lista de desafios da nossa formação! Aqui você encontrará exercícios práticos desenvolvidos em JavaScript para reforçar seus aprendizados.
 
 ## 🗂️ O que você vai encontrar aqui
 
-- 15 arquivos (`ex001.js` a `ex015.js`)
+- 50 arquivos (`ex001.js` a `ex050.js`)
 - Cada exercício é independente e interativo via terminal (entrada com `prompt-sync`)
 
 ## 🧰 O que você precisa
@@ -20,7 +21,7 @@ Bem-vindo à  lista de desafios  da nossa formação! Aqui você encontrará exe
 
 ```no bash
 git clone https://github.com/tanurispina/codificaFormacaoDevFullStack.git
-cd codificaFormacaoDevFullStack/Modulo1/listaexercicios01
+cd codificaFormacaoDevFullStack\Modulo1\listaexercicios2
 ```
 
 2. Instale as dependências:

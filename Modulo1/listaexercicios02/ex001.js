@@ -16,11 +16,11 @@ let diasdeVidaPerdidos = (minVida / (60*24))
 console.log(`A quantidade de dias de vida perdidos é: ${diasdeVidaPerdidos}`)
 
 //para a conversao usamos a funcao math.floor
-let dias = Math.floor(diasdeVidaPerdidos);
-let horas = Math.floor((diasdeVidaPerdidos - dias) * 24);
-let minutos = Math.floor(((diasdeVidaPerdidos - dias) * 24 - horas) * 60);
+let dias = Math.floor(diasdeVidaPerdidos)
+let horas = Math.floor((diasdeVidaPerdidos - dias) * 24)
+let minutos = Math.floor(((diasdeVidaPerdidos - dias) * 24 - horas) * 60)
 
 //resultado apos a conversao
-console.log(`A quantidade de dias perdidos é: ${dias} dias, ${horas} horas e ${minutos} minutos.`);
+console.log(`A quantidade de dias perdidos é: ${dias} dias, ${horas} horas e ${minutos} minutos.`)
 
 

@@ -1,7 +1,7 @@
 /* === VARIÁVEIS GLOBAIS DO PROJETO === */
 
 :root {
-  /* 🎨 Cores principais */
+  /* Cores principais */
   --cor-primaria: #ff7a00;
   --cor-secundaria: #00c896;
   --cor-fundo: #151c25;
@@ -11,10 +11,10 @@
   --cor-form: #dbe7e6;
   --cor-form-modoclaro: #1e2124;
 
-  /* 🔤 Tipografia */
+  /* Tipografia */
   --fonte-base: 'Satoshi', sans-serif;
 
-  /* 🔠 Tamanhos de fonte */
+  /* Tamanhos de fonte */
   --fs-hero: 2rem;
   --fs-grande: 1.8rem;
   --fs-subtitle: 1.5rem;
@@ -22,7 +22,7 @@
   --fs-normal: 1rem;
   --fs-pequeno: 0.875rem;
 
-  /* 📐 Espaçamentos */
+  /* Espaçamentos */
   --espacamento-pequeno: 0.5rem;
   --espacamento-normal: 2rem;
   --espacamento-grande: 3rem;
@@ -33,7 +33,7 @@
   --espacamento-ajuste: 11rem;
   --espacamento-sobreajuste: 15rem;
 
-  /* 🧱 Borda e sombra */
+  /* Borda e sombra */
   --borda-radius: 0.5rem;
   --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.15);
 }

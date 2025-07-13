@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburgerBtn.setAttribute('aria-expanded', isActive);
     });
 
-    // Fecha o menu ao clicar em um dos links (melhora a usabilidade)
+    // Fecha o menu ao clicar em um dos links (melhorar a usabilidade)
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('active');

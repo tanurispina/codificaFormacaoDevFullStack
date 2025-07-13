@@ -1,0 +1,68 @@
+/* RESET CSS MODERNO E FUNCIONAL */
+
+/* Box-sizing global: evita problemas com padding e borda somando no tamanho */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margens e paddings padrão de todos os elementos */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove lista padrão */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove sublinhado padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define fonte-base padrão do projeto */
+body {
+  line-height: 1.5;
+  font-family: var(--fonte-base, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+/* Remove estilos padrão de elementos de formulário */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Imagens nunca ultrapassam o tamanho do container */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Garante que botões sejam clicáveis */
+button {
+  cursor: pointer;
+}
+
+/* Tira espaçamento extra em tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

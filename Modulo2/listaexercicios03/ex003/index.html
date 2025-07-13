@@ -1,0 +1,56 @@
+<!-- 3. Formulário de Feedback - Em arquivo feedback.html, construa um formulário
+que contenha:
+- Nome
+- E-mail
+- Endereço Completo
+- Tipo de feedback
+- Campo para o Feedback
+- Botão de Envio -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Desenvolvimento Web Basico - Ex 003.</title>
+</head>
+
+<body>
+    <main>
+        <h1>Formulário de Feedback</h1>
+
+        <section class="form">
+            <form>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Informe seu nome" required />
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Digite seu email" required />
+
+                <label for="endereco">Endereço Completo</label>
+                <input id="endereco" type="text" placeholder="Informe seu endereço completo" required />
+
+                <label for="tipo">Tipo de Feedback</label>
+                <select id="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="critica">Crítica</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite seu feedback" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Desenvolvido por Tanuris Pina</p>
+    </footer>
+</body>
+
+</html>

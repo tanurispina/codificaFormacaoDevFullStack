@@ -1,0 +1,389 @@
+<!-- 1. Repositório GitHub
+Crie um repositório público novo (ou reutilize um que já tenha para o curso).
+No README.md explique brevemente o propósito do projeto.
+2. Estrutura de arquivos
+
+Coloque na raiz do repositório:
+perfil.html
+styles.css
+3. HTML5 Semântico
+
+No perfil.html, utilize as seguintes tags para organizar o conteúdo:
+
+<header> — cabeçalho com seu nome, foto e, se quiser, slogan.
+<nav> — menu de navegação interna (âncoras para seções).
+<main> — envoltório do conteúdo principal.
+<section> — blocos temáticos, por exemplo:
+Sobre mim
+Habilidades
+Projetos
+Contato
+<article> — para “posts” ou depoimentos, se aplicável.
+<aside> — informações complementares (links, redes sociais).
+<footer> — rodapé com direitos autorais ou créditos.
+
+4. CSS
+
+Seletores
+Por elemento: h1, p, section { … }
+Por classe: .minha-classe { … }
+Por ID: #meu-id { … }
+Layout
+Use Flexbox e/ou CSS Grid para estruturar colunas e grades.
+Inclua um reset ou normalize CSS para consistência entre navegadores.
+Recursos avançados
+Variáveis CSS (:root { --cor-primaria: #0077cc; }).
+Pseudo-classes (a:hover, button:focus).
+Pseudo-elementos (section::before, article::after).
+Responsividade
+Defina media queries para diferentes larguras de tela.
+Garanta que imagens e textos reajustem-se adequadamente.
+5. Entrega: Envie até a data limite o link para o seu repositório no GitHub.
+
+Dica extra: Adicione um favicon, fontes do Google Fonts e efeitos de transição suaves (transition) para deixar o perfil mais atraente. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tanuris Pina | Desenvolvedor Frontend</title>
+
+        <!-- SEO básico -->
+        <meta name="description"
+            content="Portfólio de Tanuris Pina, desenvolvedor frontend. Interfaces modernas, acessíveis e com foco no usuário. HTML, CSS e JavaScript.">
+        <meta name="author" content="Tanuris Pina">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords"
+            content="Tanuris, Frontend, Desenvolvedor Web, HTML, CSS, JavaScript, Portfólio, Programador, UI, Interfaces">
+
+        <!-- Redes sociais (Open Graph - para compartilhamento no WhatsApp, LinkedIn etc) -->
+        <meta property="og:title"
+            content="Tanuris Pina | Desenvolvedor Frontend">
+        <meta property="og:description"
+            content="Veja o portfólio de Tanuris Pina e seus projetos com HTML, CSS e JavaScript.">
+        <meta property="og:image" content="URL-DA-SUA-IMAGEM-DESTACADA.png">
+        <meta property="og:url" content="https://seu-site.vercel.app">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Cards (opcional) -->
+        <!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tanuris Pina | Desenvolvedor Frontend">
+  <meta name="twitter:description" content="Veja o portfólio de Tanuris Pina e seus projetos com HTML, CSS e JavaScript.">
+  <meta name="twitter:image" content="URL-DA-SUA-IMAGEM-DESTACADA.png"> -->
+
+        <!-- Favicon e fontes -->
+        <link rel="icon" href="src/assets/icons/iconnn.ico" type="image/x-icon" />
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap"
+            rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet" href="src/styles/main.css" />
+
+        <script>
+    (function() {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <nav class="nav-bar">
+                    <a href="index.html"
+                        class="logo">.tuba<span>tpina.</span></a>
+
+                    <ul id="menu">
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#projects"
+                                class="nav-link">Projetos</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+
+                    <div class="menu-actions">
+                        <button class="hamburger" aria-label="Abrir menu"
+                            aria-expanded="false" aria-controls="menu">
+                            <i class='bx bx-menu'></i>
+                        </button>
+
+                        <button id="toggle-theme" class="theme-btn"
+                            aria-label="Alternar tema claro/escuro">
+                            <i class='bx bx-brightness'></i>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <section class="hero">
+                    <div class="info-me">
+                        <h1>Tanuris Pina</h1>
+                        <p class="h1-subtitle"><strong>Desenvolvedor
+                                Frontend</strong></p>
+                        <p>Crio interfaces que conectam pessoas e ideias.
+                            Acredito que um bom site começa com empatia,
+                            continua com bom design e termina com um código bem
+                            feito.</p>
+                        <a href="#contact" class="btn btn-primary">Entre em
+                            contato</a>
+                    </div>
+                    <div class="foto">
+                        <img src="src/assets/images/foto.jpg"
+                            alt="Ilustração de um desenvolvedor trabalhando em seu notebook.">
+                    </div>
+                </section>
+
+                <section id="about" class="about-me">
+                    <div class="about-me-left">
+                        <img src="src/assets/images/img-about-me.png"
+                            alt="Ilustração de um avatar pessoal de Tanuris Pina.">
+                    </div>
+                    <div class="about-me-right">
+                        <h2>Sobre mim</h2>
+                        <p class="section-subtitle">Quem eu sou?</p>
+                        <p>Sou desenvolvedor frontend em formação, com grande
+                            interesse em criar interfaces modernas, acessíveis e
+                            funcionais. Atualmente, estou focado em aprimorar
+                            minhas habilidades com HTML, CSS e JavaScript,
+                            buscando unir design e tecnologia para entregar
+                            soluções digitais simples, bem construídas e
+                            pensadas para o usuário. Abaixo, você encontra as
+                            tecnologias com as quais venho trabalhando com mais
+                            frequência:</p>
+
+                        <ul class="technologies-list"
+                            aria-label="Tecnologias que utilizo">
+                            <li><img src="src/assets/images/javascript-logo-svgrepo-com.svg"
+                                    alt="Logotipo do JavaScript"></li>
+                            <li><img src="src/assets/images/html-5-svgrepo-com.svg"
+                                    alt="Logotipo do HTML5"></li>
+                            <li><img src="src/assets/images/css-3-svgrepo-com.svg"
+                                    alt="Logotipo do CSS3"></li>
+                        </ul>
+
+                        <a href="src/assets/documents/CV_Tanuris_Pina.pdf"
+                            class="btn btn-primary" download
+                            aria-label="Baixar currículo em formato PDF">
+                            Download Currículo
+                        </a>
+                    </div>
+                </section>
+
+                <section id="projects" class="content-projects">
+                    <h2 class="title">Projetos Recentes</h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <img class="banner"
+                                src="src/assets/images/img-projects.png"
+                                alt="Banner do Projeto Exemplo 1">
+                            <h3>Nome do projeto 1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Ullam, nesciunt delectus!
+                                Exercitationem sunt commodi quos?</p>
+
+                            <div class="project-tech">
+                                <h4>Tecnologias</h4>
+                                <ul class="technologies-list"
+                                    aria-label="Tecnologias usadas no projeto">
+                                    <li><img src="src/assets/images/javascript-logo-svgrepo-com.svg"
+                                            alt="Logotipo do JavaScript"></li>
+                                    <li><img src="src/assets/images/html-5-svgrepo-com.svg"
+                                            alt="Logotipo do HTML5"></li>
+                                    <li><img src="src/assets/images/css-3-svgrepo-com.svg"
+                                            alt="Logotipo do CSS3"></li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Ver demonstração do Projeto 1">Demo</a>
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Visitar o site do Projeto 1">Visite
+                                    o site</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img class="banner"
+                                src="src/assets/images/img-projects.png"
+                                alt="Banner do Projeto Exemplo 1">
+                            <h3>Nome do projeto 1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Ullam, nesciunt delectus!
+                                Exercitationem sunt commodi quos?</p>
+
+                            <div class="project-tech">
+                                <h4>Tecnologias</h4>
+                                <ul class="technologies-list"
+                                    aria-label="Tecnologias usadas no projeto">
+                                    <li><img src="src/assets/images/javascript-logo-svgrepo-com.svg"
+                                            alt="Logotipo do JavaScript"></li>
+                                    <li><img src="src/assets/images/html-5-svgrepo-com.svg"
+                                            alt="Logotipo do HTML5"></li>
+                                    <li><img src="src/assets/images/css-3-svgrepo-com.svg"
+                                            alt="Logotipo do CSS3"></li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Ver demonstração do Projeto 1">Demo</a>
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Visitar o site do Projeto 1">Visite
+                                    o site</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img class="banner"
+                                src="src/assets/images/img-projects.png"
+                                alt="Banner do Projeto Exemplo 1">
+                            <h3>Nome do projeto 1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Ullam, nesciunt delectus!
+                                Exercitationem sunt commodi quos?</p>
+
+                            <div class="project-tech">
+                                <h4>Tecnologias</h4>
+                                <ul class="technologies-list"
+                                    aria-label="Tecnologias usadas no projeto">
+                                    <li><img src="src/assets/images/javascript-logo-svgrepo-com.svg"
+                                            alt="Logotipo do JavaScript"></li>
+                                    <li><img src="src/assets/images/html-5-svgrepo-com.svg"
+                                            alt="Logotipo do HTML5"></li>
+                                    <li><img src="src/assets/images/css-3-svgrepo-com.svg"
+                                            alt="Logotipo do CSS3"></li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Ver demonstração do Projeto 1">Demo</a>
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Visitar o site do Projeto 1">Visite
+                                    o site</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img class="banner"
+                                src="src/assets/images/img-projects.png"
+                                alt="Banner do Projeto Exemplo 1">
+                            <h3>Nome do projeto 1</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Ullam, nesciunt delectus!
+                                Exercitationem sunt commodi quos?</p>
+
+                            <div class="project-tech">
+                                <h4>Tecnologias</h4>
+                                <ul class="technologies-list"
+                                    aria-label="Tecnologias usadas no projeto">
+                                    <li><img src="src/assets/images/javascript-logo-svgrepo-com.svg"
+                                            alt="Logotipo do JavaScript"></li>
+                                    <li><img src="src/assets/images/html-5-svgrepo-com.svg"
+                                            alt="Logotipo do HTML5"></li>
+                                    <li><img src="src/assets/images/css-3-svgrepo-com.svg"
+                                            alt="Logotipo do CSS3"></li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Ver demonstração do Projeto 1">Demo</a>
+                                <a href="#" class="btn btn-primary"
+                                    aria-label="Visitar o site do Projeto 1">Visite
+                                    o site</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section id="contact" class="contato">
+                    <div class="content-contact">
+                        <h2 class="form-title">“Entre em contato e vamos
+                            <span>construir algo incrível</span>.”</h2>
+                        <div class="form-wrapper">
+                            <form class="form-box"
+                                action="https://formsubmit.co/tanurispina@gmail.com"
+                                method="POST">
+
+                                <label for="nome">Informe seu nome:</label>
+                                <input type="text" id="nome" name="nome"
+                                    placeholder="Digite seu nome " required>
+
+                                <label for="email">Informe seu email:</label>
+                                <input type="email" id="email" name="email"
+                                    placeholder="Digite seu email: " required>
+
+                                <label for="mensagem">Digite sua
+                                    mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="4"
+                                    placeholder="Digite sua mensagem: "
+                                    required></textarea>
+
+                                <input type="hidden" name="_captcha"
+                                    value="false">
+                                <input type="hidden" name="_next"
+                                    value="https://seusite.com/obrigado.html">
+
+                                <button type="submit" class="btn btn-primary">
+                                    <img src="icone-enviar.svg" alt
+                                        aria-hidden="true">
+                                    Enviar Mensagem
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <a href="index.html">.tuba<span>tpina.</span></a>
+                    </div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#projects">Projetos</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-social" aria-label="Redes sociais">
+                        <a href="https://github.com/tanurispina" target="_blank"
+                            aria-label="Visitar Github de Tanuris Pina">
+                            <img src="src/assets/images/icons8-github-50.png"
+                                alt="Ícone do GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanurispina/"
+                            target="_blank"
+                            aria-label="Visitar Linkedin de Tanuris Pina">
+                            <img src="src/assets/images/icons8-linkedin-50.png"
+                                alt="Ícone do LinkedIn">
+                        </a>
+                        <a href="https://instagram.com/tubatpina"
+                            target="_blank"
+                            aria-label="Visitar Instagram de Tanuris Pina">
+                            <img src="src/assets/images/icons8-instagram-50.png"
+                                alt="Ícone do Instagram">
+                        </a>
+                        <a href="https://x.com/tubatpina" target="_blank"
+                            aria-label="Visitar Twitter de Tanuris Pina">
+                            <img
+                                src="src/assets/images/icons8-twitter-bird-50.png"
+                                alt="Ícone do Twitter">
+                        </a>
+                    </div>
+                    <div class="footer-copy">
+                        <p>&copy; 2025 Desenvolvido por <a
+                                href="index.html">Tanuris Pina</a>. Todos os
+                            direitos Reservados</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="src/scripts/script.js"></script>
+
+    </body>
+
+</html>

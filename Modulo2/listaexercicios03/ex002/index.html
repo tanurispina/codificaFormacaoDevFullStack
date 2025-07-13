@@ -1,0 +1,115 @@
+<!-- 2. Listas e Navegação - Em um arquivo listas.html:
+- Crie uma lista não ordenada (<ul>) com cinco hobbies seus, cada um em um
+<li>.
+- Crie uma lista ordenada (<ol>) descrevendo, em passos, como preparar uma
+receita simples, cada passo em um <li>.
+- Ao final, inclua um bloco de navegação (<nav>) com três links externos,
+usando <a href="URL_DO_SITE">Nome do Site</a>. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+    />
+    <title>Desenvolvimento Web Basico - Ex 002.</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">.tubatpina.</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content-left">
+       <h2>Hobbies</h2>
+        <ul>
+          <li>Assistir Filmes/Series</li>
+          <li>Ouvir Musicas de diversos estilos musicais</li>
+          <li>Tocar violao</li>
+          <li>
+            Games
+            <ul>
+              <li>Console</li>
+              <ul>
+                <li>Futebol</li>
+                <li>Assassins Creed</li>
+              </ul>
+              <li>Mobile</li>
+              <ul>
+                <li>Last Day On Earth</li>
+                <li>Clash of Clans</li>
+              </ul>
+            </ul>
+          </li>
+          <li></li>
+        </ul>
+      </section>
+      <section class="content-right">
+        <h2>Receita de Bolo Frito</h2>
+        <h3>Ingredientes</h3>
+        <article class="receita">
+          <ol class="left">
+            <li>3/4 xícara de chá de leite</li>
+            <li>2 xícaras de chá de tapioca</li>
+            <li>1 ovo</li>
+            <li>3 colheres de sopa de margarina</li>
+          </ol>
+          <ol class="right">
+            <li>1 colher de sopa de erva-doce 
+            </li>
+            <li>Sal a gosto</li>
+            <li>2 xícaras de chá de óleo aproximadamente, para a fritura</li>
+            <li>2 colheres de parmesao ralado</li>
+            <li>2 colheres de parmesao ralado</li>
+          </ol>
+        </article>
+        <article class="prepare">
+          <h3>Modo de Preparo</h3>
+          <ol>
+            <li>Numa bacia coloque a tapioca e o ovo.</li>
+            <li>Misture-os com as mãos.</li>
+            <li>
+              Leve ao fogo o leite, a margarina, a erva-doce e o sal a gosto.
+            </li>
+            <li>Quando o leite levantar fervura retire-o do fogo.</li>
+            <li>Junte o leite quente a massa.</li>
+            <li>Sove bem a massa, até que ela comece a fazer um barulhinho.</li>
+            <li>Depois de bem sovada faça tirinhas com a massa.</li>
+            <li>Enrole as tirinhas como uma trança de duas pernas.</li>
+            <li>
+              Coloque numa panela óleo o suficiente para que os bolos fiquem
+              boiando.
+            </li>
+            <li>
+              Deixe o óleo esquentar bem e coloque os bolinhos para fritar.
+            </li>
+            <li>Tampe a panela</li>
+            <li>Vire-os de vez em quando.</li>
+            <li>
+              Atenção: não deixe crianças perto e tome cuidado pois eles podem
+              estourar.
+            </li>
+            <li>Sirva morno com café.</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <a href="#https://g1.globo.com/pi/piaui/">G1 Piaui</a>
+        <a href="#https://ge.globo.com/futebol/times/sao-paulo/">Ge - SPFC</a>
+        <a href="#https://www.suprinettelecom.com.br/">Suprinet Fibra</a>
+      </div>
+      <p>&copy; Desenvolvido por Tanuris Pina</p>
+    </footer>
+  </body>
+</html>

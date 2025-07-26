@@ -1,14 +1,12 @@
-// Aguarda o DOM estar completamente carregado para executar os scripts
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* =================================
-       LÓGICA DO TOGGLE DE TEMA
-    ================================= */
+
     const toggleBtn = document.getElementById('toggle-theme');
     const body = document.body;
     const icon = toggleBtn.querySelector('i');
 
-    // Função centralizada para atualizar o ícone e o estado
+   
     function updateTheme(isDarkMode) {
         body.classList.toggle('dark-mode', isDarkMode);
         if (isDarkMode) {
@@ -18,17 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Evento de clique no botão de tema
+
     toggleBtn.addEventListener('click', () => {
         const isDarkMode = body.classList.contains('dark-mode');
-        // A lógica de toggle agora é negada, pois queremos o estado oposto
+  
         updateTheme(!isDarkMode);
-        // Armazena a nova escolha no localStorage
+ 
         localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     });
 
-    // O script no <head> já cuidou do estado inicial,
-    // então aqui apenas garantimos que o ícone esteja correto.
+ 
     const savedTheme = localStorage.getItem('theme') === 'dark';
     updateTheme(savedTheme);
 
@@ -43,11 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburgerBtn.addEventListener('click', () => {
         const isActive = menu.classList.toggle('active');
         
-        // Atualiza o atributo ARIA para acessibilidade
         hamburgerBtn.setAttribute('aria-expanded', isActive);
     });
 
-    // Fecha o menu ao clicar em um dos links (melhorar a usabilidade)
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('active');

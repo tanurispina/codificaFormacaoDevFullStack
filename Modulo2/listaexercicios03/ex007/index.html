@@ -2,32 +2,49 @@
 - Apareça apenas em telas com largura ≤ 600 px.
 - Oculte a navegação padrão e abra/feche o menu ao ser clicado. -->
 
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css">
-        <title>Desenvolvimento Web Basico - Ex 001.</title>
-    </head>
-    <body>
-        <header>
-            <h1>Titulo do exercicio</h1>
-            <p>Paragrafo do exercicio</p>
-        </header>
-        <main>
-            <section>
-                <h2>Visao</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit in eaque, reiciendis sed consequuntur pariatur accusantium maiores iure est error sunt quasi? Debitis placeat veniam ipsum repellendus fugit architecto sed?</p>
-            </section>
-            <section>
-                <h2>Missao</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus vitae laudantium delectus nobis autem numquam aliquam molestias facilis, quibusdam cumque aut dolores quasi debitis consectetur neque non tempore recusandae tenetur.</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; Desenvolvido por Tanuris Pina</p>
-        </footer>
-        
-    </body>
-    </html>
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Hamburger</title>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">.tubatpina.</div>
+      
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="hamburger-menu" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+      <h1>Página de Exemplo</h1>
+      <p>Redimensione a janela do navegador para menos de 600px de largura para ver o menu hamburger em ação.</p>
+  </main>
+
+  <script>
+  
+    const hamburgerButton = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerButton.addEventListener('click', () => {
+
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

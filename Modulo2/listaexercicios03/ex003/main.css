@@ -1,75 +1,85 @@
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
   color: #333;
-  padding: 2rem;
+  padding: 20px;
 }
 
-main {
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-h1 {
+main h1 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #14213d;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+
+section.form {
+  max-width: 600px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-label {
+
+form label {
+  display: block;
+  margin-bottom: 8px;
   font-weight: bold;
-  margin-bottom: 0.3rem;
+  color: #14213d;
 }
 
-input,
-textarea,
-select {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+
+form input,
+form select,
+form textarea {
   width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
-textarea {
-  min-height: 100px;
-  resize: vertical;
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #fca311;
+  outline: none;
 }
 
 .btn {
-  background-color: #007bff;
-  color: white;
+  width: 100%;
+  padding: 12px;
+  background-color: #fca311;
   border: none;
-  padding: 0.8rem;
+  color: #fff;
   font-size: 1rem;
-  border-radius: 5px;
+  font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #d98306;
 }
 
-/* Rodapé */
+/* Footer */
 footer {
-  margin-top: 2rem;
+  margin-top: 40px;
   text-align: center;
   color: #666;
+  font-size: 0.9rem;
 }
